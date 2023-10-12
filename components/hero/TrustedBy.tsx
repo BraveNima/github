@@ -5,12 +5,13 @@ const TrustedBy = () => {
   return (
     <div className="md:my-32 my-24">
       <p className="text-[16px] leading-[24px] text-[#7d8590]">
-        Trusted by the world's leading organizations↘︎
+        Trusted by the world&apos;s leading&nbsp;organizations&nbsp;↘︎
       </p>
       <div className="flex flex-wrap justify-between items-center">
         {/* image are comming from the constants */}
         {trustedImg.map((img) => (
           <Image
+            key={img.id}
             src={img.src}
             alt={img.alt}
             height={img.height}
